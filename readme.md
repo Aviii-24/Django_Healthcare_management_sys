@@ -45,14 +45,14 @@ healthcare_project/
 ```bash
     git clone https://github.com/your-username/healthcare-api.git
     cd healthcare-api
-
+```
 ### 2️⃣ Create Virtual Environment & Install Dependencies
+```bash
     python -m venv venv
     source venv/bin/activate   # For Linux/Mac
     venv\Scripts\activate      # For Windows
-
     pip install -r requirements.txt
-
+```
 ### 3️⃣ Configure Environment Variables
 
 --- Create a .env file in the project root:
@@ -72,13 +72,17 @@ healthcare_project/
     REFRESH_TOKEN_LIFETIME_DAYS=7
 
 ### 4️⃣ Run Migrations
-    python manage.py migrate
-
+```bash 
+     python manage.py migrate
+```
 ### 5️⃣ Create Superuser
+```bash 
     python manage.py createsuperuser
-
+```
 ### 6️⃣ Run the Server
+```bash 
     python manage.py runserver
+```
 ---Server available at: http://127.0.0.1:8000/
 
 ---
@@ -124,31 +128,22 @@ healthcare_project/
 ### Patients
 
    - GET /api/patients/ → List patients (only logged-in user's records)
-
    - POST /api/patients/ → Create patient profile
-
    - PUT /api/patients/<id>/ → Update patient profile
-
    - DELETE /api/patients/<id>/ → Delete patient
 
 ### Doctors
 
    - GET /api/doctors/ → List all doctors (public)
-
    - POST /api/doctors/ → Create new doctor (auth required)
-
    - PUT /api/doctors/<id>/ → Update doctor info
-
    - DELETE /api/doctors/<id>/ → Delete doctor
 
 ### Patient-Doctor Mappings
 
    - GET /api/mappings/ → List all patient-doctor mappings
-
    - GET /api/mappings/patient/<patient_id>/ → Get all doctors for a patient
-
    - POST /api/mappings/ → Assign doctor to patient
-
    - DELETE /api/mappings/<id>/ → Remove mapping
 
 ---
