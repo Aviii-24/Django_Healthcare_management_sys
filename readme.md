@@ -35,7 +35,7 @@ healthcare_project/
 │── requirements.txt # Project dependencies
 │── .env.example # Example environment variables
 │── README.md # Project documentation
-
+```
 
 ---
 
