@@ -27,7 +27,7 @@ This project provides a simple but scalable backend for healthcare management. I
 ---
 
 ## 📂 Project Structure
-
+```bash
 healthcare_project/
 │── core/ # Main Django app (models, views, serializers, permissions, urls)
 │── healthcare_project/ # Project settings and configurations
